@@ -35,7 +35,6 @@ We show our results compared with some baselines.
 
 ## Our MureCom Dataset
 
-## MureCom Dataset
 
 Our MureCom dataset is available in the `/MureCom` folder. This folder consists of 32 subject subfolders, where each subfolder contains the following data:
 
