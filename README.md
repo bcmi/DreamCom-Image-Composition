@@ -39,7 +39,7 @@ We show our results compared with some baselines.
 Our MureCom dataset is available in the `/MureCom` folder. This folder consists of 32 subject subfolders, where each subfolder contains the following data:
 
 - **Backgrounds**: Each subfolder includes 20 background images corresponding to that subject. These background images are stored in the `bg` folder together with their bounding boxes.
-- **Foregrounds**: Each subfolder includes 3 sets of foreground images, with each set containing 5 images. The foreground images are stored in the `fg`, `fg1`, and `fg2` folders together with their masks.
+- **Foregrounds**: Each subfolder includes 3 sets of foreground images, with each set containing 5 images. The foreground images are stored in the `fg1`, `fg2`, and `fg3` folders together with their masks.
 
 
 
