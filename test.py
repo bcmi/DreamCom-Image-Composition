@@ -48,7 +48,7 @@ def output_medium(iter,pipeline,package_name,class_name,image_num=5,fg_name='fg'
         init_images.append(image)
         print(image.size)
 
-    file_path ='testset2/' + package_name + '/bbox.txt'
+    file_path ='MureCom/' + package_name + '/bbox.txt'
     bboxes = []
     with open(file_path, 'r') as file:
         lines = file.readlines()
