@@ -17,7 +17,7 @@ for ((i=0; i<$length; i++)); do
 
     class_name=${list2[i]}
     
-    accelerate launch --num_processes=1 train.py --fg_name fg1 --image_num 5 --package_name=$package_name --class_name="$class_name" --pretrained_model_name_or_path=$MODEL_NAME  --instance_data_dir=$INSTANCE_DIR --output_dir=$OUTPUT_DIR --instance_prompt="a photo of sks " --background_prompt="background" --resolution=512 --train_batch_size=1 --learning_rate=5e-6 --lr_scheduler="constant" --lr_warmup_steps=0 --max_train_steps=600 --output_medium --gradient_accumulation_steps=1 #--gradient_checkpointing --mixed_precision=fp16
+    accelerate launch --num_processes=1 train.py --fg_name fg1 --image_num 5 --package_name=$package_name --class_name="$class_name" --pretrained_model_name_or_path=$MODEL_NAME  --instance_data_dir=$INSTANCE_DIR --output_dir=$OUTPUT_DIR --instance_prompt="a photo of sks " --background_prompt="background" --resolution=512 --train_batch_size=1 --learning_rate=5e-6 --lr_scheduler="constant" --lr_warmup_steps=0 --max_train_steps=400 --output_medium --gradient_accumulation_steps=1 #--gradient_checkpointing --mixed_precision=fp16
     python test.py --background_prompt="background" --do_crop --package_name=$package_name --fg_name fg1 --image_num 5 --class_name="$class_name"
     
 done
