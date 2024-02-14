@@ -1,6 +1,3 @@
-# ![hot](https://bcmi.sjtu.edu.cn/~niuli/images/fire.png) Our lab has released the image composition toolbox [libcom](https://github.com/bcmi/libcom), which integrates all the functions related to image composition. The toolbox would be continuously upgraded. Welcome to visit and try :-)
----
-
 # DreamCom-Image-Composition
 
 
@@ -62,17 +59,12 @@ Our code is based on the basic code from the [diffusers library](https://github.
     bash train_and_test.sh
     ```
 
-
-
-Currently, we finetune the text-guided inpainting model from <https://huggingface.co/runwayml/stable-diffusion-inpainting>. However, the performance of this model is unsatisfactory. A better text-guided inpainting model is in high demand.
-
-
 ## Experiments
 
 We show our results compared with some baselines. 
 
 <p align='center'>  
-  <img src='./figures/result.png'  width=60% />
+  <img src='./figures/result.png'  width=90% />
 </p>
 
 ## Our MureCom Dataset
