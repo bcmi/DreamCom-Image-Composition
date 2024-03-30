@@ -33,27 +33,26 @@ Our code is based on the basic code from the [diffusers library](https://github.
         ```
 2.  Download Models
 
-    Please download the base model to the `diffusers-v1-5-inpaint/` folder.
-
-    *   Our model is based on [runwayml/stable-diffusion-inpainting](https://huggingface.co/runwayml/stable-diffusion-inpainting).
-3.  Dataset
+    Please download the files and models from https://huggingface.co/runwayml/stable-diffusion-inpainting/tree/main, and put them in the `diffusers-v1-5-inpaint/` folder.
+    
+4.  Dataset
 
     You can download our MureCom Dataset, and put it under the folder `MureCom/` for training and testing.
-4.  Train
+5.  Train
 
     You can execute the following code snippet to initiate the training process for a model. This model is specifically designed to establish a correlation between the unique train located in the `MureCom/Train/fg1` directory and the concept represented by `"a photo of sks train"`. The trained model will be subsequently stored within the `models/` directory.
 
     ```bash
     accelerate launch --num_processes=1 train.py --fg_name fg1 --image_num 5 --package_name="Train" --class_name="train" --pretrained_model_name_or_path="diffusers-v1-5-inpaint"  --instance_data_dir="MureCom/" --output_dir="models/" --instance_prompt="a photo of sks " --background_prompt="background" --resolution=512 --train_batch_size=1 --learning_rate=5e-6 --lr_scheduler="constant" --lr_warmup_steps=0 --max_train_steps=400 --gradient_accumulation_steps=1 
     ```
-5.  Test
+6.  Test
 
     You can execute the code provided below to utilize our recently trained model for generating sks train against the backgrounds found in the `MureCom/Train/bg` directory. The generated results will be appropriately stored in the corresponding location within the `MureCom/Train/result/fg1/` directory.
 
     ```bash
     python test.py --background_prompt="background" --do_crop --package_name="Train" --fg_name fg1 --image_num 5 --class_name="train"
     ```
-6.  Train and test for all instances in MureCom
+7.  Train and test for all instances in MureCom
 
     ```bash
     bash train_and_test.sh
