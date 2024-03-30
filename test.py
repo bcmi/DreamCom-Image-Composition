@@ -44,7 +44,7 @@ def output_medium(iter,pipeline,package_name,class_name,image_num=5,fg_name='fg'
     init_images = []
     for ij in range(20):
         image = Image.open(
-            'testset2/' + package_name + '/bg/' + str(ij) + '.jpg')
+            'MureCom/' + package_name + '/bg/' + str(ij) + '.jpg')
         init_images.append(image)
         print(image.size)
 
