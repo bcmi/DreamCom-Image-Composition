@@ -6,7 +6,8 @@ This is the official repository for the following research paper:
 > **DreamCom: Finetuning Text-guided Inpainting Model for Image Composition**  [[arXiv]](https://arxiv.org/pdf/2309.15508.pdf)<br>
 >
 > Lingxiao Lu, Bo Zhang, Li Niu <br>
->
+
+We divide generative composition methods into token-to-object methods and object-to-object methods (e.g., [ObjectStitch](https://github.com/bcmi/ObjectStitch-Image-Composition), [ControlCom](https://github.com/bcmi/ControlCom-Image-Composition)). DreamCom belongs to token-to-object methods. Currently, token-to-object methods have not shown clear advantage over object-to-object methods. 
 
 ## Task
 
