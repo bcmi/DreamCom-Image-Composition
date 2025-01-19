@@ -79,6 +79,6 @@ Our MureCom dataset is available in the `/MureCom` folder. This folder consists 
 
 ## Other Resources
 
-+ We summarize the papers and codes of image composition from all aspects: [Awesome-Image-Composition](https://github.com/bcmi/Awesome-Image-Composition)
++ We summarize the papers and codes of image composition from all aspects: [Awesome-Image-Composition](https://github.com/bcmi/Awesome-Object-Insertion)
 + We summarize all possible evaluation metrics to evaluate the quality of composite images:  [Composite-Image-Evaluation](https://github.com/bcmi/Composite-Image-Evaluation)
 + We write a comprehensive on image composition: [the 3rd edition](https://arxiv.org/abs/2106.14490)
