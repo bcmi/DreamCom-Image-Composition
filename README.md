@@ -70,10 +70,10 @@ We show our results compared with some baselines.
 ## Our MureCom Dataset
 
 
-Our MureCom dataset is available in the `/MureCom` folder. This folder consists of 32 subject subfolders, where each subfolder contains the following data:
+Our MureCom dataset is available in the `/MureCom` folder. Note that MureCom is extended from our previous [FOSCom](https://github.com/bcmi/ControlCom-Image-Composition/tree/main?tab=readme-ov-file#foscom-dataset) dataset. This folder consists of 32 category subfolders, where each subfolder contains the following data:
 
-- **Backgrounds**: Each subfolder includes 20 background images corresponding to that subject. These background images are stored in the `bg` folder together with their bounding boxes.
-- **Foregrounds**: Each subfolder includes 3 sets of foreground images, with each set containing 5 images. The foreground images are stored in the `fg1`, `fg2`, and `fg3` folders together with their masks.
+- **Backgrounds**: Each subfolder includes 20 background images suitable for that category. These background images are stored in the `bg` folder together with their bounding boxes to insert the foreground object.
+- **Foregrounds**: Each subfolder includes 3 sets of foreground images, in which each set contains 5 images for the same foreground object. Three sets of foreground images are stored in the `fg1`, `fg2`, and `fg3` folders together with their masks.
 
 
 
