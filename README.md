@@ -9,6 +9,12 @@ This is the official repository for the following research paper:
 
 We divide generative composition methods into token-to-object methods and object-to-object methods (e.g., [ObjectStitch](https://github.com/bcmi/ObjectStitch-Image-Composition), [ControlCom](https://github.com/bcmi/ControlCom-Image-Composition)). DreamCom belongs to token-to-object methods. Currently, token-to-object methods have not shown clear advantage over object-to-object methods. 
 
+## Online Demo
+
+Try this [online demo](http://libcom.ustcnewly.com/) for image composition (object insertion) built upon [libcom](https://github.com/bcmi/libcom) toolbox and have fun!
+
+[![]](https://github.com/user-attachments/assets/87416ec5-2461-42cb-9f2d-5030b1e1b5ec)
+
 ## Task
 
 Given a few (3~5) reference images for a subject, we aim to customize a generative model, which can insert this subject into an arbitrary background image. In the obtained composite image, the foreground subject should be compatible with the background in terms of illumination, geometry, and semantics.
