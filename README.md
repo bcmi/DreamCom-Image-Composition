@@ -22,7 +22,7 @@ Given a few (3~5) reference images for a subject, we aim to customize a generati
 Technically, we finetune a text-guided inpainting model based on the reference images of one subject, during which a special token is associated with this subject. Then, we apply the finetuned model to a new background image. 
 
 <p align='center'>  
-  <img src='./figures/task.jpg'  width=60% />
+  <img src='./figures/task.jpg'  width=80% />
 </p>
 
 ## Our MureCom Dataset
@@ -54,6 +54,11 @@ MureCom
 │── ....
 ```
 
+By taking "fg3" from "Box" category as an example, we show foreground images, object masks, foreground images after removing objects, augmented foreground images by varying object lighting below. 
+
+<p align='center'>  
+  <img src='./figures/murecom_fg_example.jpg'  width=80% />
+</p>
 
 ## Code and Model
 
